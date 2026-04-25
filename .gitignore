@@ -1,0 +1,27 @@
+# Unreal build outputs
+Binaries/
+Intermediate/
+DerivedDataCache/
+Build/
+
+# Per-user / runtime state — API keys live here
+Saved/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln
+*.VC.db
+*.opensdf
+*.sdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
