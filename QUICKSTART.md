@@ -1,6 +1,6 @@
 # Quickstart 🚀
 
-Get the plugin running in five minutes.
+Get the plugin running in five minutes. Every CVar it surfaces comes from a preprocessed library of all 6,600+ UE 5.5 console variables bundled with the plugin — Claude ranks and tunes from that catalog instead of guessing names.
 
 ## 1. Drop it in your project 📂
 

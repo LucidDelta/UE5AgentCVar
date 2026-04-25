@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "UE5 Agent CVar",
-	"Description": "AI-assisted and manual console variable discovery for Unreal Engine 5.5.",
+	"Description": "Search and tune Unreal Engine 5.5 console variables from a preprocessed catalog of all 6,600+ engine CVars — picked by Claude or by live substring search. No guessed names, no hallucinated flags.",
 	"Category": "Editor",
 	"CanContainContent": false,
 	"EnabledByDefault": true,

@@ -8,14 +8,16 @@
 [![Anthropic Claude](https://img.shields.io/badge/AI-Anthropic%20Claude-d97706)](https://www.anthropic.com/)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen)](#)
 
-Find and tune Unreal Engine console variables without leaving the editor — either by describing your problem in plain English and letting Claude pick the right CVars, or by searching the catalog live as you type.
+Find and tune Unreal Engine console variables without leaving the editor — either by describing your problem in plain English and letting Claude pick from the catalog, or by searching it live as you type.
+
+Every result comes from a **preprocessed library of all 6,600+ UE 5.5 CVars** shipped inside the plugin (`Resources/cvars.json`). Claude only ever picks names that exist — no guessed CVars, no hallucinated flags, no made-up defaults. The AI's job is ranking and suggesting values; the catalog itself is ground truth.
 
 ---
 
 ## What it does
 
-- **Ask AI** — describe a problem (*"my shadows flicker on foliage at distance"*) and get a ranked list of CVars with suggested values and a one-line reason for each.
-- **Manual search** — live substring match across all 6,600+ UE 5.5 CVars (name + description).
+- **Ask AI** — describe a problem (*"my shadows flicker on foliage at distance"*) and get a ranked list of real CVars from the bundled catalog, with suggested values and a one-line reason for each. Claude picks from the preprocessed library, not from memory.
+- **Manual search** — live substring match across all 6,600+ UE 5.5 CVars (name + description), straight out of the same catalog.
 - **Apply / Reset** — every result has an editable value field, an Apply button, and a Reset to Default button. Suggested values stay in the box so you can flip back and forth.
 - **Two logs** — Agent Process log (Claude's prompts & responses) and CVar History log (every apply/reset). Both Ctrl+C friendly.
 - **Per-project key storage** — your Anthropic API key is saved to `GEditorPerProjectIni`, never to source control.
